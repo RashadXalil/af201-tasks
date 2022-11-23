@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent {
+  width: 800px;
+  height: 800px;
+  border: solid;
+}
+.child {
+  width: 200px;
+  transition: 0.3s linear;
+  height: 200px;
+  background-color: red;
+}
+.parent:hover .child {
+  margin-left: 600px;
+  background-color: blue;
+}
