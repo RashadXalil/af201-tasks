@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  &__nav {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    &__top {
+      padding: 40px;
+      background-color: #fcbe00;
+      display: flex;
+      height: 70px;
+      align-items: center;
+      justify-content: space-between;
+      &__right {
+        button {
+          border: none;
+          padding: 10px;
+          color: white;
+          background-color: transparent;
+          &:first-child {
+            border-right: 1px solid white;
+          }
+        }
+      }
+    }
+    &__bottom {
+      padding: 40px;
+      display: flex;
+      height: 100px;
+      align-items: center;
+      justify-content: space-between;
+      &__middle {
+        ul {
+          list-style: none;
+          display: flex;
+          li {
+            margin-right: 20px;
+            a {
+              color: black;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      &__right {
+        ul {
+          display: flex;
+          list-style: none;
+          li {
+            margin-right: 20px;
+            i {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
