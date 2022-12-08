@@ -9,7 +9,11 @@ if (!localStorage.getItem('cars')) {
   localStorage.setItem('cars', JSON.stringify(Cars))
 } else {
   Cars = JSON.parse(localStorage.getItem('cars')) // 3
-  index = Cars.length + 1
+  if (Cars.length > 1) {
+    index = Cars.length + 1
+  } else {
+    index = 1
+  }
 }
 
 class Car {
@@ -35,9 +39,9 @@ function addCar() {
 function deleteCar(id) {
   let target = Cars.find((car) => car.id == id) // {id:3}
   let indexOfTarget = Cars.indexOf(target) // [2]
-  Cars.splice(indexOfTarget, 1) // [2,1]
-  let localArr = JSON.parse(localStorage.getItem('cars'))
-  renderList(localArr)
+  Cars.splice(indexOfTarget, 1) // <div 2,1=""></div>
+  localStorage.setItem('cars', JSON.stringify(Cars))
+  renderList(Cars)
 }
 btn.addEventListener('click', () => {
   addCar()
@@ -53,10 +57,17 @@ function renderList(array) {
     <td>${array[i].brand}</td>
     <td>${array[i].model}</td>
     <td>${array[i].year}</td>
-    <td><button class="btn btn-danger">Delete</button></td>
+    <td><button class="btn btn-danger deleteBtn">Delete</button></td>
   </tr>`
   }
   tbody.innerHTML = innerHTML
+
+  const deleteBtns = document.getElementsByClassName('deleteBtn')
+  for (let i = 0; i < array.length; i++) {
+    deleteBtns[i].addEventListener('click', () => {
+      deleteCar(array[i].id)
+    })
+  }
 }
 let localArr = JSON.parse(localStorage.getItem('cars'))
 renderList(localArr)
