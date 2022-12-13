@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Document</title>
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+        border: 1px solid red;
+      }
+      .parent {
+        width: 500px;
+        height: 400px;
+        padding: 30px;
+        border: 1px solid black;
+      }
+      .child {
+        width: 100%;
+
+        height: 100px;
+        background-color: red;
+      }
+      .active {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      data-aos="fade-down"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"></div>
+    <!-- <button id="fadeIn">fade In</button>
+    <button id="fadeOut">fade Out</button>
+    <button id="fadeToggle">fade Toggle</button>
+    <button id="fadeTo">fadeTo</button>
+    <img
+      id="img"
+      width="100px"
+      height="100px"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
+      alt="" /> -->
+    <!-- <button id="slideDown">SlideDown</button>
+    <button id="slideToggle">SlideToggle</button> -->
+    <!-- <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptatum
+      praesentium ab laborum molestiae enim odio aperiam omnis magni debitis
+      provident et mollitia inventore! Libero tempora dignissimos quod itaque
+      consectetur, ducimus accusamus voluptatem perspiciatis dolorem sapiente
+      similique molestiae labore nemo saepe quae, laboriosam eius magni pariatur
+      eum aliquam ipsum? Accusamus, eius sunt! Eius repellat amet iste pariatur,
+      quaerat odio neque cupiditate quis delectus quisquam illum laudantium
+      ipsam consequuntur saepe! Culpa odio assumenda inventore totam accusantium
+      quisquam delectus itaque possimus reprehenderit officia? Quod in, rem
+      molestias laborum quos assumenda, laudantium eveniet excepturi inventore
+      quibusdam doloribus soluta dolorum hic perferendis minus suscipit. Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Temporibus laborum
+      quos eum nam hic magni quis voluptatem cupiditate voluptates nemo.
+    </p> -->
+    <!-- <input type="text" placeholder="name" id="name" />
+    <div></div>
+    <span>span</span> -->
+    <!-- <img
+      id="book"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
+      alt=""
+      width="100"
+      height="123" /> -->
+    <!-- <ul>
+      <li>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </li>
+      <li>2</li>
+      <li>3</li>
+    </ul> -->
+    <!-- <button id="btn">Button</button>
+    <div class="parent">
+      <div class="child"></div>
+    </div> -->
+    <!-- <button id="get">get</button>
+    <a id="a" href="djsandjksnajkdsanjkdsa">salam</a> -->
+    <!-- <input type="text" value="Ferid" name="" id="inp" />  -->
+    <!-- <p>
+      <b>salam</b>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius,
+      voluptates. 
+    </p> -->
+    <!-- <button id="btn">set</button>
+    <div id="wrapper"></div> -->
+    <!-- <a>google</a> -->
+    <!-- SELECT * USERS -->
+    <!-- <button id="btn">set</button>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+    <p></p> -->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+      function addDarkmodeWidget() {
+        new Darkmode().showWidget();
+      }
+      window.addEventListener("load", addDarkmodeWidget);
+    </script>
+    <script>
+      const options = {
+        bottom: "64px", // default: '32px'
+        right: "unset", // default: '32px'
+        left: "32px", // default: 'unset'
+        time: "0.5s", // default: '0.3s'
+        mixColor: "#fff", // default: '#fff'
+        backgroundColor: "#fff", // default: '#fff'
+        buttonColorDark: "#100f2c", // default: '#100f2c'
+        buttonColorLight: "#fff", // default: '#fff'
+        saveInCookies: false, // default: true,
+        label: "🌓", // default: ''
+        autoMatchOsTheme: true // default: true
+      };
+
+      const darkmode = new Darkmode(options);
+      darkmode.showWidget();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"></script>
+    <script src="jq.js"></script>
+  </body>
+</html>

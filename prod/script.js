@@ -133,7 +133,6 @@ prodAddBtn.addEventListener('click', () => {
   console.log(Products)
 })
 function editProduct(id) {
-  // js
   let target = Products.find((x) => x.id == id)
   editBrandInp.value = target.brand
   editCategoryInp.value = target.category

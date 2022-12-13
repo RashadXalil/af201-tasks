@@ -1,0 +1,37 @@
+/* .hidden {
+  display: none !important;
+}
+.icon span {
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 50px;
+  position: absolute;
+  height: 50px;
+  right: 0;
+  border: 1px solid red;
+  justify-content: center;
+}
+
+.firstSpan {
+  position: absolute;
+  top: 50%;
+  transform: rotate(50deg);
+  transition: 1s;
+}
+.lastSpan {
+  transition: 1s;
+  position: absolute;
+  top: 50%;
+  transform: rotate(-50deg);
+}
+body {
+  border: 1px solid black;
+  height: 400px;
+} */

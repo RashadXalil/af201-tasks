@@ -1,9 +1,14 @@
-let a = parseInt(prompt('Enter the first variable: '))
-let b = parseInt(prompt('Enter the second variable: '))
+let numbers = ''
 
-a = a + b
-b = a - b
-a = a - b
-
-console.log(`The value of a after swapping: ${a}`)
-console.log(`The value of b after swapping: ${b}`)
+function a() {
+  for (let i = 0; i <= 13; i++) {
+    let num = Math.random() // 0-1
+    if (num < 0.5) {
+      numbers += 1
+    } else {
+      numbers += 0
+    }
+  }
+}
+a()
+console.log(numbers)
