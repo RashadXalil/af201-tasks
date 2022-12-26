@@ -1,0 +1,72 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 1,
+      "title": "sda,mlkdmsakldas",
+      "author": "dsak dsammdaskl"
+    },
+    {
+      "id": 1,
+      "title": "Vahid",
+      "author": "typicode"
+    },
+    {
+      "id": 5,
+      "title": "Hello World",
+      "author": "rashad"
+    },
+    {
+      "id": 6,
+      "title": "Hello World",
+      "author": "rashad"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "typicode"
+    },
+    {
+      "id": 2
+    },
+    {
+      "name": "dsadsa",
+      "email": "dsadsad",
+      "password": "21213",
+      "username": "dsadsa",
+      "surname": "dsadsa",
+      "id": 3
+    },
+    {
+      "name": "dsadsa",
+      "email": "dsadsa",
+      "password": "dsadsa",
+      "username": "dsadsa",
+      "surname": "dsadsa",
+      "id": 4
+    },
+    {
+      "name": "dsadsa",
+      "surname": "dsadsa",
+      "email": "dsadsa",
+      "username": "21",
+      "password": "dsadsa",
+      "id": 5
+    }
+  ]
+}
