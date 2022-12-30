@@ -1,0 +1,108 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    
+
+}
+// .timer_body{
+//     width: 500px;
+//     height: 300px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-evenly;
+//     background-color: red;
+//     .timer_bottom{
+
+//     }
+// }
+.timer_body {
+    width: 30rem;
+    height: 12rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+     &:before {
+      content: "";
+      position: absolute;
+      background: inherit;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+      filter: blur(10px);
+      margin: -20px;
+     
+    }
+    .timer_bottom{
+        display: flex;
+        flex-direction: column;
+        height: 60px;
+        justify-content: space-between;
+        align-items: center;
+        .timer_count{
+            font-size: 25px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 10px;
+        }
+    }
+    .btns{
+        width: 270px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        button{
+            width:80px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            font-size: 17px;
+            &:nth-child(1){
+                background-color: #34BE82;
+                &:hover{
+                    transform: scale(1.05);
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                }
+            }
+            &:nth-child(2){
+                background-color: #E64848;
+                &:hover{
+                    transform: scale(1.05);
+
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                }
+            }
+            &:nth-child(3){
+                background-color: #FFB100;
+                &:hover{
+                    transform: scale(1.05);
+
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                }
+            }
+        }
+    }
+  }
+  h1{
+    // background-color: #f3ec78;
+    margin-left: 160px;
+    background-image: linear-gradient(90deg,#ffffff, #ff0000 );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    
+  }
