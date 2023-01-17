@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cardCreator{
+    width: 100%;
+    height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(143, 130, 125);
+}
+form{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+input{
+        width: 194px;
+        border-radius: 8px;
+        border: none;
+        margin: 10px;
+        padding: 5px;
+        height: 25px;
+}
+
+
+
+p{
+    margin: 2px;
+    width: 150px;
+}
+button{
+    width: 120px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    color: black;
+    margin-top: 10px;
+}
+
+select{
+    width: 194px;
+    height: 25px;
+    border-radius: 8px;
+        border: none;
+        margin: 10px;
+        padding: 5px;
+}
+.addBtn{
+    cursor: pointer;
+}
+

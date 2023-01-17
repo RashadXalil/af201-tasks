@@ -1,0 +1,65 @@
+.homeContainer{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.card{
+    width: 200px;
+    height: 350px;
+    border-radius: 8px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.img{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.name{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+
+}
+.id{
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.price{
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.desc{
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: red;
+    color: white !important;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    color: white !important;
+}
+.input{
+    width: 200px;
+    height: 30px;
+    border: 1px solid;
+    
+}
